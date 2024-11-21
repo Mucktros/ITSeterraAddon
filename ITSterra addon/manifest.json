@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "IT Seterra",
+  "description": "--",
+  "version": "1",
+  "permissions": [
+    "storage"
+  ],
+  "icons": {
+    "512": "icons/seterra.png"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "ITSeterraChromium.js"
+      ],
+      "matches": [
+        "https://www.geoguessr.com/*"
+      ]
+    }
+  ]
+}
