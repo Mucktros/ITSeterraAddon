@@ -23,7 +23,7 @@ Un ringraziamento speciale a **NekoXIII** per aver creato il SeterraAddon origin
 - **Spostamento in basso**: Sposta il controllo dell'estensione più in basso sulla schermata per una disposizione più ordinata.
 - **Carattere**: Usa il vecchio stile di font per un effetto nostalgico.
 - **Prestazioni**: Rimuove gli elementi non necessari per migliorare le prestazioni.
-- **Skib**: Muovi la mappa per un controllo migliore durante il gioco.
+- **Skib**: Muovi la mappa per un controllo migliore.
 
 ---
 
