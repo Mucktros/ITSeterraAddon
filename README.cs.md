@@ -24,11 +24,11 @@ Zvláštní poděkování patří **NekoXIII** za vytvoření původního Seterr
 - **Písmo**: Použijte starý styl písma pro nostalgický pocit.
 - **Výkon**: Odstraňuje nepotřebné prvky pro lepší výkon.
 - **Skib**: Posouvejte mapu.
-
 - **Automatické překlady**: Změna jazyků také změní funkce rozšíření, ale můžete to zakázat pomocí tlačítka pod funkcemi rozšíření.
 
 ---
-## Funkce pro firefox ✨
+
+## Funkce pro Firefox ✨
 
 **CSSeterraAddon** nabízí následující možnosti přizpůsobení pro **Seterra**:
 
@@ -43,7 +43,7 @@ Zvláštní poděkování patří **NekoXIII** za vytvoření původního Seterr
 - **Dis.Col**: Zakázat různé barvy.
 - **PTL Url**: Automaticky změní adresu URL kvízu na Umístění štítků.
 - **Výkon**: Odstraňuje nepotřebné prvky pro lepší výkon.
-- **Skib Out Dawg**: Přibližujte a zmenšujte samotnou mapu.
+- **Skib Out Dawg**: Přibližujte a oddalujte samotnou mapu.
 - **NASTAVENÍ PTL**: Načte nastavení používaná pro PTL.
 
 ---
@@ -66,6 +66,7 @@ Zvláštní poděkování patří **NekoXIII** za vytvoření původního Seterr
 A je to!
 
 ---
+
 ## Instalace pro Firefox 📥
 1. Nainstalujte doplněk z obchodu s doplňky firefox: https://addons.mozilla.org/en-US/firefox/addon/afdusrt-s-steera-ptl-features/
 2. To je ono!
@@ -84,6 +85,7 @@ A je to!
 A je to!
 
 ---
+
 ## Kredity 👏
 
 - **NekoXIII** – Pro původní SeterraAddon, který položil základy tohoto projektu.
