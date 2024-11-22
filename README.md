@@ -32,6 +32,7 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 - **Auto Translations**: Changing languages will also change the extension features, but you can disable this by using the button under the extension features.
 
 ---
+
 ## Features For firefox ✨
 
 **CSSeterraAddon** offers the following customization options for **Seterra**:
@@ -70,6 +71,7 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 And that's it!
 
 ---
+
 ## Installation For Firefox 📥
 1. Install the add-on from the firefox add-on store: https://addons.mozilla.org/en-US/firefox/addon/afdusrt-s-steera-ptl-features/ 
 2. That's it!
@@ -88,6 +90,7 @@ And that's it!
 And thats's it!
 
 ---
+
 ## Credits 👏
 
 - **NekoXIII** – For the original SeterraAddon, which laid the groundwork for this project.
