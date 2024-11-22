@@ -1,8 +1,10 @@
 # ITSeterraAddon
 
-Benvenuto in **ITSeterraAddon**!
+Benvenuti su **ITSeterraAddon**!
 
-Un ringraziamento speciale a **NekoXIII** per aver creato il SeterraAddon originale, che ha servito come base per questo progetto!
+Per le traduzioni in **Italiano** vedere [Traduzioni in Italiano](https://github.com/Mucktros/ITSeterraAddon/blob/main/README.it.md)
+
+Un ringraziamento speciale a **NekoXIII** per aver creato l'originale SeterraAddon, che è servito come base per questo progetto.
 
 ---
 
@@ -10,43 +12,44 @@ Un ringraziamento speciale a **NekoXIII** per aver creato il SeterraAddon origin
 
 **ITSeterraAddon** offre le seguenti opzioni di personalizzazione per **Seterra**:
 
-- **Modalità scura**: Passa alla modalità scura per un'esperienza di gioco più comoda.
-- **Sfondo**: Attiva o disattiva lo sfondo (opzione senza mappa).
-- **Opzioni di reset**: Scegli tra un **Reset veloce** o un **Reset con barra spaziatrice** per ripristinare rapidamente il gioco.
-- **Centro mappa**: Centra la mappa sullo schermo per una navigazione migliore.
-- **Top 10 punteggi**: Visualizza i tuoi primi 10 punteggi per tenere traccia dei tuoi progressi.
-- **Etichetta**: Nascondi l'etichetta del cursore per un'interfaccia più pulita.
-- **Nomi in grassetto**: Rendi i nomi dei paesi in grassetto per una visibilità migliore.
-- **Bandierine**: Nascondi le bandiere sulla mappa (opzione senza bandiere).
-- **Nomi**: Nascondi i nomi dei paesi sulla mappa (opzione senza nomi).
-- **Disabilita clic sul testo**: Disabilita i clic sugli elementi di testo per un'interazione più fluida.
-- **Spostamento in basso**: Sposta il controllo dell'estensione più in basso sulla schermata per una disposizione più ordinata.
-- **Carattere**: Usa il vecchio stile di font per un effetto nostalgico.
-- **Prestazioni**: Rimuove gli elementi non necessari per migliorare le prestazioni.
-- **Skib**: Muovi la mappa per un controllo migliore.
+- **Modalità scura**: passa a un tema scuro per un'esperienza di gioco più confortevole.
+- **Sfondo**: attiva/disattiva lo sfondo (nessuna opzione per lo sfondo della mappa).
+- **Reimposta**: **Reimposta spazio** per ripristini rapidi del gioco.
+- **Centra mappa**: centra la mappa sullo schermo per una migliore navigazione.
+- **Punteggi migliori 10**: visualizza i tuoi 10 punteggi migliori per tenere traccia dei tuoi progressi. - **Etichetta**: Nascondi l'etichetta del cursore per una schermata più pulita.
+- **Nomi in grassetto**: Rendi i nomi dei paesi in grassetto per una migliore visibilità.
+- **Bandiere**: Nascondi le bandiere dalla mappa (nessuna opzione bandiere).
+- **Nomi**: Nascondi i nomi dei paesi sulla mappa (nessuna opzione nomi).
+- **Nessun clic sul testo**: Disattiva i clic sugli elementi di testo per un'interazione più fluida.
+- **Giù**: Sposta i controlli dell'estensione più in basso sullo schermo per un layout più pulito.
+- **Carattere**: Utilizza il vecchio stile del carattere per un tocco nostalgico.
+- **Prestazioni**: Rimuove gli elementi non necessari per prestazioni migliori.
+- **Skib**: Sposta la mappa.
+
+- **Traduzioni automatiche**: Cambiare lingua cambierà anche le funzionalità dell'estensione, ma puoi disattivarlo utilizzando il pulsante sotto le funzionalità dell'estensione.
 
 ---
 
 ## Installazione 📥
 
-### Istruzioni di installazione per Chromium
+### Istruzioni per l'installazione di Chromium
 
-1. Scarica l'ultima versione dal [GitHub Releases di ITSeterraAddon](https://github.com/Mucktros/ITSterraAddon/releases/latest) (assicurati di **scaricare la versione, non il codice sorgente**).
-2. Estrai il contenuto del file zip in una cartella.
-3. Apri la pagina delle Estensioni del tuo browser:
-    - In Chrome: vai su `chrome://extensions/`
-    - In Edge: vai su `edge://extensions/`
-4. Attiva la modalità **Sviluppatore** (se non è già attivata).
-5. Clicca su **Carica estensione non pacchettizzata**.
-6. Seleziona la cartella che hai appena estratto.
-7. L'estensione dovrebbe ora comparire nella lista delle estensioni installate.
-8. Ricarica qualsiasi pagina di Seterra aperta per attivare l'estensione.
+1. Scarica l'ultima versione da [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSterraAddon/releases/latest) (assicurati di **scaricare la versione, non il codice sorgente**).
+2. Decomprimi la cartella della versione per estrarre i file.
+3. Apri la pagina Estensioni del tuo browser:
+- In Chrome: vai su `chrome://extensions/`
+- In Edge: vai su `edge://extensions/`
+4. Attiva **Modalità sviluppatore** (se non lo è già).
+5. Fai clic su **Carica non compresso**.
+6. Seleziona la cartella appena decompressa.
+7. L'estensione dovrebbe ora apparire nell'elenco delle estensioni installate.
+8. Ricarica una qualsiasi pagina Seterra aperta per attivare l'estensione.
 
-Ecco fatto! Sei pronto per iniziare la tua avventura con Seterra con le funzionalità aggiuntive. 🎉
+E questo è tutto!
 
 ---
 
 ## Crediti 👏
 
-- **NekoXIII** – Per il SeterraAddon originale, che ha fornito la base per questo progetto.
+- **NekoXIII** – Per l'originale SeterraAddon, che ha gettato le basi per questo progetto.
 - **Mucktros** – Sviluppatore di **ITSeterraAddon** con nuove funzionalità e personalizzazioni.
