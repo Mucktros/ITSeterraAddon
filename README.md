@@ -46,7 +46,7 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 7. The extension should now appear in your list of installed extensions.
 8. Reload any open Seterra page to activate the extension.
 
-And that's it! You’re all set to start your Seterra adventures with enhanced features. 🎉
+And that's it!
 
 ---
 
