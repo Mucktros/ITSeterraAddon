@@ -8,7 +8,7 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 
 ---
 
-## Features ✨
+## Features For Chrome ✨
 
 **ITSeterraAddon** offers the following customization options for **Seterra**:
 
