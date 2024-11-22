@@ -13,16 +13,16 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 **ITSeterraAddon** offers the following customization options for **Seterra**:
 
 - **Dark Mode**: Switch to a dark theme for a more comfortable gaming experience.
-- **Background**: Toggle the background on/off (no map background option).
+- **Background**: Toggle the background on/off.
 - **Reset**: **Space Reset** for quick game resets.
-- **Center Map**: Center the map on the screen for better navigation.
+- **Center Map**: Center the map.
 - **Top 10 Scores**: View your top 10 high scores to keep track of your progress.
-- **Label**: Hide the cursor label for a cleaner screen.
-- **Bold Names**: Make country names bold for easier visibility.
-- **Flags**: Hide flags from the map (no flags option).
-- **Names**: Hide country names on the map (no names option).
-- **No Click on Text**: Disable clicks on text elements for smoother interaction.
-- **Down**: Move the extension controls further down the screen for a cleaner layout.
+- **Label**: Hide the cursor label.
+- **Bold Names**: Toggle bold names on/off.
+- **Flags**: Toggle flags on/off.
+- **Names**: Toggle names on/off.
+- **No Click on Text**: Disable clicks on text.
+- **Down**: Move the extension controls further down the screen.
 - **Font**: Use the old font style for a nostalgic feel.
 - **Performance**: Removes unnecessary elements for better performance.
 - **Skib**: Move the map around.
