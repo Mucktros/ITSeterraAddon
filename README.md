@@ -32,8 +32,25 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 - **Auto Translations**: Changing languages will also change the extension features, but you can disable this by using the button under the extension features.
 
 ---
-## Features For firefxo sigma afdusrt extnesion 0 lkag ✨
- https://addons.mozilla.org/en-US/firefox/addon/afdusrt-s-steera-ptl-features/
+## Features For firefox ✨
+
+**CSSeterraAddon** offers the following customization options for **Seterra**:
+
+- **Map Reset**: Press Space for quick game resets.
+- **Map Water**: Toggle the background on/off.
+- **Map Padding**: Padding space under for the map.
+- **Image Background**: Change the background image to the pre-selected images or add your own in /images.
+- **Inc Label**: Hide the cursor label.
+- **Inc Names**: Toggle names on/off.
+- **Inc Bold**: Toggle bold names on/off.
+- **Inc Flags**: Toggle flags on/off.
+- **Dis.Col**: Disable different colors.
+- **PTL Url**: Auto changes the url of a quiz to Place The Labels.
+- **Performance**: Removes unnecessary elements for better performance.
+- **Skib Out Dawg**: Zoom in and out the map itself.
+- **PTL SETTINGS**: Loads settings used for PTL.
+
+--- 
 
 ## Installation For Chrome 📥
 
@@ -53,7 +70,24 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 And that's it!
 
 ---
+## Installation For Firefox 📥
+1. Install the add-on from the firefox add-on store: https://addons.mozilla.org/en-US/firefox/addon/afdusrt-s-steera-ptl-features/ 
+2. That's it!
 
+**If The Link Doesnt Work Do This**:
+
+### Firefox Manual Installation Instructions
+
+
+1. Download the latest release from the [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSterraAddon/releases/latest) (make sure to **download the release, not the source code**).
+2. Go to `about:debugging`
+3. Click On **This Firefox**.
+4. Click On Load **Temporary Addon-on**.
+5. Select the .Zip file and click Open.
+
+And thats's it!
+
+---
 ## Credits 👏
 
 - **NekoXIII** – For the original SeterraAddon, which laid the groundwork for this project.
