@@ -27,6 +27,8 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 - **Performance**: Removes unnecessary elements for better performance.
 - **Skib**: Move the map around for better control during gameplay.
 
+- **Auto Translations**: Changing languages will also change the extension features, but you can disable this by using the button under the extension features.
+
 ---
 
 ## Installation 📥
