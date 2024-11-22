@@ -2,6 +2,8 @@
 
 Welcome to **ITSeterraAddon**!
 
+For **Italiano** Translations See [READMEItalano](https://github.com/Mucktros/ITSeterraAddon/blob/main/READMEItaliano.md)
+
 A special thanks to **NekoXIII** for creating the original SeterraAddon, which served as the foundation for this project!
 
 ---
