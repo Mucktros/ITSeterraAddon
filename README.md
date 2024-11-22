@@ -56,12 +56,4 @@ And that's it!
 - **Mucktros** – Developer of **ITSeterraAddon** with new features and customizations.
 - **Afdusrt** - developer of the features: skib, and performance. Also the dev of Firefox version
 
-- # CZECK FIREFOX SIGMA 0 lag no lag  AFDUSRT ADDON 
-fully skidded by afdusrt 
-
-## Features ✨ 
-    viz the extension files
-
-## installation: [instalace:]
-download code and in the sigma folder you get the sigma zip inside the extension files and you do that.
 
