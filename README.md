@@ -54,3 +54,26 @@ And that's it!
 
 - **NekoXIII** – For the original SeterraAddon, which laid the groundwork for this project.
 - **Mucktros** – Developer of **ITSeterraAddon** with new features and customizations.
+- **Afdusrt** - developer of the features: skib, and performance for chromium because he is just sigma like that.
+
+# CZECK FIREFOX SIGMA 0 lag no lag  AFDUSRT ADDON [ČECKÝ FIREFOX SIGMA 0 lag bez lagu  PŘIDÁVKO AFDUSRT]
+fully skidded by afdusrt [plně zkopírovaný od afdusrt]
+
+## Features ✨ [Funkce ✨]
+
+**ITSeterraAddon** offers the following customization options for **Seterra**: [**ITSeterraAddon** nabízí následující možnosti přizpůsobení pro **Seterra**:]
+
+- **IMG and BLACK Background**: Toggle the background on/off. [**OBRÁZEK a ČERNÝ POZADÍ**: Zapnout/Vypnout pozadí.]
+- **Reset**: **Space Reset** for quick game resets. [**RESET**: **Reset mezerou** pro rychlé resetování hry.]
+- **Label**: Hide the cursor label. [**ŠtíTEK**: Skrýt štítek kurzoru.]
+- **Bold Names**: Toggle bold names on/off. [**TUČNÉ JMÉNA**: Zapnout/Vypnout tučná jména.]
+- **Flags**: Toggle flags on/off. [**VLÁSKY**: Zapnout/Vypnout vlásky.]
+- **Names**: Toggle names on/off. [**JMÉNA**: Zapnout/Vypnout jména.]
+- **Performance**: Removes unnecessary elements for better performance. [**VÝKONNOST**: Odebere nepotřebné prvky pro lepší výkon.]
+- **Skib**: Move the map around. [**SKIB**: Přesouvat mapu.]
+
+- **Auto Translations**: Changing languages will also change the extension features, but you can disable this by using the button under the extension features. [**Automatické překlady**: Při změně jazyka se změní i funkce rozšíření, ale můžete to vypnout pomocí tlačítka pod funkcemi rozšíření.]
+
+## installation: [instalace:]
+download code and in the sigma folder you get the sigma zip inside the extension files and you do that. [stáhněte si kód a ve složce sigma najdete soubor sigma.zip mezi soubory rozšíření a udělejte to.]
+
