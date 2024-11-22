@@ -90,4 +90,4 @@ A je to!
 
 - **NekoXIII** – Pro původní SeterraAddon, který položil základy tohoto projektu.
 - **Mucktros** – Vývojář **ITSeterraAddon** s novými funkcemi a přizpůsobením.
-- **Afdusrt** - Vývojář funkcí: skib a výkon. Také vývojová verze Firefoxu
+- **Afdusrt** - Vývojář funkcí: skib a výkon. Také vývojová verze Firefoxu.
