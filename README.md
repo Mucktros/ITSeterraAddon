@@ -59,3 +59,13 @@ And that's it!
 - **Afdusrt** - developer of the features: skib, and performance. Also the dev of Firefox version
 
 
+CZECK FIREFOX SIGMA 0 LAG NO LAG AFDUSRT ADDON
+
+fully skidded by afdusrt
+Features ✨
+
+    see extension files
+
+Installation: [installation:]
+
+Download the code and inside the sigma folder, find the sigma.zip within the extension files and proceed with the installation.
