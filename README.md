@@ -28,12 +28,11 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 - **Font**: Use the old font style for a nostalgic feel.
 - **Performance**: Removes unnecessary elements for better performance.
 - **Skib**: Move the map around.
-
 - **Auto Translations**: Changing languages will also change the extension features, but you can disable this by using the button under the extension features.
 
 ---
 
-## Features For firefox ✨
+## Features For Firefox ✨
 
 **CSSeterraAddon** offers the following customization options for **Seterra**:
 
@@ -46,12 +45,12 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 - **Inc Bold**: Toggle bold names on/off.
 - **Inc Flags**: Toggle flags on/off.
 - **Dis.Col**: Disable different colors.
-- **PTL Url**: Auto changes the url of a quiz to Place The Labels.
+- **PTL Url**: Auto changes the URL of a quiz to Place The Labels.
 - **Performance**: Removes unnecessary elements for better performance.
-- **Skib Out Dawg**: Zoom in and out the map itself.
+- **Skib Out Dawg**: Zoom in and out of the map itself.
 - **PTL SETTINGS**: Loads settings used for PTL.
 
---- 
+---
 
 ## Installation For Chrome 📥
 
