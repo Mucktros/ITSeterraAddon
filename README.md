@@ -2,9 +2,9 @@
 
 Welcome to **ITSeterraAddon**! 
 
-Per le traduzioni in **Italiano** vedere [Traduzioni in Italiano](https://github.com/Mucktros/ITSeterraAddon/blob/main/README.it.md)
+Per le traduzioni in **Italiano** vedere [Traduzioni in Italiano](https://github.com/Mucktros/ITSeterraAddon/blob/main/Readmes/README.it.md)
 
-Pro pravý **Český** překlad klikněte zde [Český překlad](https://github.com/Mucktros/ITSeterraAddon/blob/main/README.cs.md)
+Pro pravý **Český** překlad klikněte zde [Český překlad](https://github.com/Mucktros/ITSeterraAddon/blob/main/Readmes/README.cs.md)
 
 A special thanks to **NekoXIII** for creating the original SeterraAddon, which served as the foundation for this project.
 
