@@ -33,62 +33,8 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 
 ---
 ## Features For firefxo sigma afdusrt extnesion 0 lkag ✨
+ https://addons.mozilla.org/en-US/firefox/addon/afdusrt-s-steera-ptl-features/
 
-const toggleButtons = [
-    {
-        label: "Map Reset",
-        onFunction: function() { document.addEventListener("keydown", spaceKeyDownHandler); },
-        offFunction: function() { document.removeEventListener("keydown", spaceKeyDownHandler); },
-        defaultState: true
-    },
-    {
-        label: "Map water",
-        onFunction: function() { if (document.getElementById(`WATER`)) { document.getElementById(`WATER`).style.fill = "#a4d1dc"; } if (document.getElementById(`BACKGROUND`)) { document.getElementById(`BACKGROUND`).style.fill = "#a4d1dc"; } if (document.getElementById(`WATER_1_`)) { document.getElementById(`WATER_1_`).style.fill = "#a4d1dc"; } if (document.getElementById(`WATER_2_`)) { document.getElementById(`WATER_2_`).style.fill = "#a4d1dc"; } if (document.getElementById(`WATER_3_`)) { document.getElementById(`WATER_3_`).style.fill = "#a4d1dc"; } },
-        offFunction: function() { if (document.getElementById(`WATER`)) { document.getElementById(`WATER`).style.fill = "none"; } if (document.getElementById(`BACKGROUND`)) { document.getElementById(`BACKGROUND`).style.fill = "none"; } if (document.getElementById(`WATER_1_`)) { document.getElementById(`WATER_1_`).style.fill = "none"; } if (document.getElementById(`WATER_2_`)) { document.getElementById(`WATER_2_`).style.fill = "none"; } if (document.getElementById(`WATER_3_`)) { document.getElementById(`WATER_3_`).style.fill = "none"; } },
-        defaultState: true
-    },
-    {
-        label: "Map padding",
-        onFunction: function() { if (document.getElementsByClassName("extra-info_extraInfo__80Tci")) { let a = document.getElementsByClassName("extra-info_extraInfo__80Tci"); if (a[0]) { a[0].style.marginTop = "400px" }; } },
-        offFunction: function() { if (document.getElementsByClassName("extra-info_extraInfo__80Tci")) { let a = document.getElementsByClassName("extra-info_extraInfo__80Tci"); if (a[0]) { a[0].style.marginTop = "0px" }; } },
-        defaultState: true
-    },
-    {
-        label: "Image Bg.",
-        onFunction: imgbgON,
-        offFunction: imgbgOFF,
-        defaultState: true
-    },
-    {
-        label: "inc Label",
-        onFunction: labelON,
-        offFunction: labelOFF,
-        defaultState: true
-    },
-    {
-        label: "inc Names",
-        onFunction: namesON,
-        offFunction: namesOFF,
-        defaultState: true
-    },
-    {
-        label: "inc Bold",
-        onFunction: boldON,
-        offFunction: boldOFF,
-        defaultState: true
-    },
-    {
-        label: "inc Flags",
-        onFunction: flagsON,
-        offFunction: flagsOFF,
-        defaultState: true
-    },
-    {
-        label: "dis.col.",
-        onFunction: function() { var style = document.createElement('style'); style.innerHTML = `.seterra_root__NV8MT { --seterra-color-green-dark: #1e8346 !important; }`; document.head.appendChild(style); },
-        offFunction: function() { var style = document.createElement('style'); style.innerHTML = `.seterra_root__NV8MT { --seterra-color-green-dark: #166c38 !important; }`; document.head.appendChild(style); },
-        defaultState: false
-    }
 ## Installation For Chrome 📥
 
 ### Chromium Installation Instructions
