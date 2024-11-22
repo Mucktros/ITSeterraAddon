@@ -33,7 +33,7 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 
 ---
 
-## Installation 📥
+## Installation For Chrome 📥
 
 ### Chromium Installation Instructions
 
