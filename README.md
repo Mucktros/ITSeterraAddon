@@ -37,17 +37,29 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 **CSSeterraAddon** offers the following customization options for **Seterra**:
 
 - **Map Reset**: Press Space for quick game resets.
+- 
 - **Map Water**: Toggle the background on/off.
+- 
 - **Map Padding**: Padding space under for the map.
+- 
 - **Image Background**: Change the background image to the pre-selected images or add your own in /images.
+- 
 - **Inc Label**: Hide the cursor label.
+- 
 - **Inc Names**: Toggle names on/off.
+- 
 - **Inc Bold**: Toggle bold names on/off.
+- 
 - **Inc Flags**: Toggle flags on/off.
+- 
 - **Dis.Col**: Disable different colors.
+
 - **PTL Url**: Auto changes the url of a quiz to Place The Labels.
+- 
 - **Performance**: Removes unnecessary elements for better performance.
+- 
 - **Skib Out Dawg**: Zoom in and out the map itself.
+- 
 - **PTL SETTINGS**: Loads settings used for PTL.
 
 --- 
