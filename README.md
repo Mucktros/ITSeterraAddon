@@ -14,7 +14,7 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 
 - **Dark Mode**: Switch to a dark theme for a more comfortable gaming experience.
 - **Background**: Toggle the background on/off (no map background option).
-- **Reset**:**Space Reset** for quick game resets.
+- **Reset**: **Space Reset** for quick game resets.
 - **Center Map**: Center the map on the screen for better navigation.
 - **Top 10 Scores**: View your top 10 high scores to keep track of your progress.
 - **Label**: Hide the cursor label for a cleaner screen.
