@@ -50,7 +50,7 @@ Un ringraziamento speciale a **NekoXIII** per aver creato l'originale SeterraAdd
 
 ### Istruzioni per l'installazione di Chromium
 
-1. Scarica l'ultima versione da [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSterraAddon/releases/latest) (assicurati di **scaricare la versione, non il codice sorgente**).
+1. Scarica l'ultima versione da [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases/tag/Chrome) (assicurati di **scaricare la versione, non il codice sorgente**).
 2. Decomprimi la cartella della versione per estrarre i file.
 3. Apri la pagina Estensioni del tuo browser:
 - In Chrome: vai su `chrome://extensions/`
@@ -73,7 +73,7 @@ Ed ecco fatto!
 
 ### Istruzioni per l'installazione manuale di Firefox
 
-1. Scarica l'ultima versione da [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSterraAddon/releases/latest) (assicurati di **scaricare la versione, non il codice sorgente**).
+1. Scarica l'ultima versione da [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases/tag/Firefox) (assicurati di **scaricare la versione, non il codice sorgente**).
 2. Vai su `about:debugging`
 3. Fai clic su **Questo Firefox**.
 4. Fai clic su Carica **Componente aggiuntivo temporaneo**.
