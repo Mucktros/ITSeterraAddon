@@ -13,20 +13,21 @@ Un ringraziamento speciale a **NekoXIII** per aver creato l'originale SeterraAdd
 **ITSeterraAddon** offre le seguenti opzioni di personalizzazione per **Seterra**:
 
 - **Modalità scura**: passa a un tema scuro per un'esperienza di gioco più confortevole.
-- **Sfondo**: attiva/disattiva lo sfondo (nessuna opzione per lo sfondo della mappa).
+- **Sfondo**: attiva/disattiva lo sfondo.
 - **Reimposta**: **Reimposta spazio** per ripristini rapidi del gioco.
-- **Centra mappa**: centra la mappa sullo schermo per una migliore navigazione.
-- **Punteggi migliori 10**: visualizza i tuoi 10 punteggi migliori per tenere traccia dei tuoi progressi. - **Etichetta**: Nascondi l'etichetta del cursore per una schermata più pulita.
-- **Nomi in grassetto**: Rendi i nomi dei paesi in grassetto per una migliore visibilità.
-- **Bandiere**: Nascondi le bandiere dalla mappa (nessuna opzione bandiere).
-- **Nomi**: Nascondi i nomi dei paesi sulla mappa (nessuna opzione nomi).
-- **Nessun clic sul testo**: Disattiva i clic sugli elementi di testo per un'interazione più fluida.
-- **Giù**: Sposta i controlli dell'estensione più in basso sullo schermo per un layout più pulito.
-- **Carattere**: Utilizza il vecchio stile del carattere per un tocco nostalgico.
-- **Prestazioni**: Rimuove gli elementi non necessari per prestazioni migliori.
-- **Skib**: Sposta la mappa.
+- **Centra mappa**: centra la mappa.
+- **Punteggi migliori 10**: visualizza i tuoi 10 punteggi migliori per tenere traccia dei tuoi progressi.
+- **Etichetta**: nascondi l'etichetta del cursore.
+- **Nomi in grassetto**: attiva/disattiva i nomi in grassetto.
+- **Bandiere**: attiva/disattiva le bandierine.
+- **Nomi**: attiva/disattiva i nomi.
+- **Nessun clic sul testo**: disattiva i clic sul testo.
+- **Giù**: sposta i controlli dell'estensione più in basso sullo schermo.
+- **Carattere**: utilizza il vecchio stile del carattere per un tocco nostalgico.
+- **Prestazioni**: rimuove gli elementi non necessari per prestazioni migliori.
+- **Skib**: sposta la mappa.
 
-- **Traduzioni automatiche**: Cambiare lingua cambierà anche le funzionalità dell'estensione, ma puoi disattivarlo utilizzando il pulsante sotto le funzionalità dell'estensione.
+- **Traduzioni automatiche**: la modifica delle lingue modificherà anche le funzionalità dell'estensione, ma puoi disattivarla utilizzando il pulsante sotto le funzionalità dell'estensione.
 
 ---
 
@@ -34,8 +35,7 @@ Un ringraziamento speciale a **NekoXIII** per aver creato l'originale SeterraAdd
 
 ### Istruzioni per l'installazione di Chromium
 
-1. Scarica l'ultima versione da [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSterraAddon/releases/latest) (assicurati di **scaricare la versione, non il codice sorgente**).
-2. Decomprimi la cartella della versione per estrarre i file.
+1. Scarica l'ultima versione da [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSterraAddon/releases/latest) (assicurati di **scaricare la versione, non il codice sorgente**). 2. Decomprimi la cartella di rilascio per estrarre i file.
 3. Apri la pagina Estensioni del tuo browser:
 - In Chrome: vai su `chrome://extensions/`
 - In Edge: vai su `edge://extensions/`
@@ -45,7 +45,7 @@ Un ringraziamento speciale a **NekoXIII** per aver creato l'originale SeterraAdd
 7. L'estensione dovrebbe ora apparire nell'elenco delle estensioni installate.
 8. Ricarica una qualsiasi pagina Seterra aperta per attivare l'estensione.
 
-E questo è tutto!
+Ed ecco fatto!
 
 ---
 
