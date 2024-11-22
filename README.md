@@ -59,7 +59,7 @@ And that's it!
 - **Afdusrt** - developer of the features: skib, and performance. Also the dev of Firefox version
 
 
-CZECK FIREFOX SIGMA 0 LAG NO LAG AFDUSRT ADDON
+# CZECK FIREFOX SIGMA 0 LAG NO LAG AFDUSRT ADDON
 
 fully skidded by afdusrt
 Features ✨
