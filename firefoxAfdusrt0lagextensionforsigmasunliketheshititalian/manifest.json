@@ -1,0 +1,33 @@
+{
+  "description": "adds skib dop place the labels addons to  https://www.geoguessr.com/ pages.",
+  "manifest_version": 2,
+  "name": "afdusrt's place the labels features wizard",
+  "version": "1.0",
+  "permissions": [
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "icons": {
+    "512": "icons/seterra.png"
+  },
+  "content_scripts": [
+    {
+	  "resources": ["images/background.png"],
+      "matches": [
+        "https://www.geoguessr.com/*"
+      ],
+      "js": [
+        "afdusrtsigma.js"
+      ]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "afdusrtsigmasteera@dopdop.com"
+    }
+  },
+  "browser_action": {
+    "default_area": "navbar"
+  }
+}
