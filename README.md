@@ -1,6 +1,6 @@
  # ITSeterraAddon
 
-Welcome to **ITSeterraAddon**!
+Welcome to **ITSeterraAddon**! 
 
 Per le traduzioni in **Italiano** vedere [Traduzioni in Italiano](https://github.com/Mucktros/ITSeterraAddon/blob/main/README.it.md)
 
