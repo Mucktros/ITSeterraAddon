@@ -56,7 +56,7 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 
 ### Chromium Installation Instructions
 
-1. Download the latest release from the [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases/tag/Chrome) (make sure to **download the release, not the source code**).
+1. Download the latest release from the [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases) (make sure to **download the release, not the source code**).
 2. Unzip the release folder to extract the files.
 3. Open your browser's Extensions page:
     - In Chrome: Go to `chrome://extensions/`
@@ -80,7 +80,7 @@ And that's it!
 ### Firefox Manual Installation Instructions
 
 
-1. Download the latest release from the [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases/tag/Firefox) (make sure to **download the release, not the source code**).
+1. Download the latest release from the [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases) (make sure to **download the release, not the source code**).
 2. Go to `about:debugging`
 3. Click On **This Firefox**.
 4. Click On Load **Temporary Addon-on**.
