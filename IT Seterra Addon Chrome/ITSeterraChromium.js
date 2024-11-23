@@ -1113,30 +1113,51 @@ function removeElements(selector) {
 }
 
 function performance() {
-	
-	removeElements('.notifications_root__q0A7_');
-	removeElements('.seterra_outStreamMwAd___XU6M');
-	
-	removeElements('.seterra_adContainerLeft__zTLsS');
-	removeElements('.seterra_adContainerRight__lDew4');
-	removeElements('.ad_wrapper__3DZ7k');
-	
-    removeElements('.header_root__tDHgF');
-    removeElements('.footer_root__wR7Ju');
-    removeElements('.breadcrumbs_breadcrumbs__PokUc');
-    removeElements('.area-list_section__lcD0H');
-    removeElements('.game-page_title__t3F0F');
-    removeElements('.headline_heading__2lf9L');
-    removeElements('.game-footer_legend__dPwkj');
-    removeElements('.highscore_heading__mqofP');
-    removeElements('.choose-question-button_flex__uFznI');
-    removeElements('.game-footer_left__G4e4s');
-    
-    removeElements('article');  
-    removeElements('p');
-    
-   
-    ///removeElements('#delete-this-id');
+    const selectors = [
+        '.notifications_root__q0A7_',
+        '.seterra_outStreamMwAd___XU6M',
+        '.seterra_adContainerLeft__zTLsS',
+        '.seterra_adContainerRight__lDew4',
+        '.ad_wrapper__3DZ7k',
+        '.header_root__tDHgF',
+        '.footer_root__wR7Ju',
+        '.breadcrumbs_breadcrumbs__PokUc',
+        '.area-list_section__lcD0H',
+        '.game-page_title__t3F0F',
+        '.headline_heading__2lf9L',
+        '.game-footer_legend__dPwkj',
+        '.highscore_heading__mqofP',
+        '.choose-question-button_flex__uFznI',
+        '.game-footer_left__G4e4s',
+        'article',
+        'p'
+    ];
+
+    selectors.forEach(selector => {
+        const element = document.querySelector(selector);
+        
+        if (element) {
+            if (element.style.display === 'none') {
+                addElements(selector);
+            } else {
+                removeElements(selector);
+            }
+        }
+    });
+}
+
+function removeElements(selector) {
+    const element = document.querySelector(selector);
+    if (element) {
+        element.style.display = 'none';
+    }
+}
+
+function addElements(selector) {
+    const element = document.querySelector(selector);
+    if (element) {
+        element.style.display = '';
+    }
 }
 
 function skibidi(bool) {
