@@ -31,20 +31,7 @@ Zvláštní poděkování patří **NekoXIII** za vytvoření původního Seterr
 ## Funkce pro Firefox ✨
 
 **CSSeterraAddon** nabízí následující možnosti přizpůsobení pro **Seterra**:
-
-- **Map Reset**: Stiskněte mezerník pro rychlé resetování hry.
-- **Map Water**: Zapnutí/vypnutí pozadí.
-- **Map Padding**: Vyplňování prostoru pod mapou.
-- **Pozadí obrázku**: Změňte obrázek na pozadí na předem vybrané obrázky nebo přidejte svůj vlastní do /images.
-- **Inc Label**: Skryje popisek kurzoru.
-- **Inc Names**: Zapnutí/vypnutí jmen.
-- **Inc Bold**: Zapnutí/vypnutí tučných názvů.
-- **Inc Flags**: Zapnutí/vypnutí příznaků.
-- **Dis.Col**: Zakázat různé barvy.
-- **PTL Url**: Automaticky změní adresu URL kvízu na Umístění štítků.
-- **Výkon**: Odstraňuje nepotřebné prvky pro lepší výkon.
-- **Skib Out Dawg**: Přibližujte a oddalujte samotnou mapu.
-- **NASTAVENÍ PTL**: Načte nastavení používaná pro PTL.
+**to uvidíš v poznámek releasu more**
 
 ---
 
