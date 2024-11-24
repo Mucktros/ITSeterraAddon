@@ -30,19 +30,7 @@ Un ringraziamento speciale a **NekoXIII** per aver creato l'originale SeterraAdd
 ## Caratteristiche per Firefox ✨
 
 **CSSeterraAddon** offre le seguenti opzioni di personalizzazione per **Seterra**:
-
-- **Map Reset**: premi la barra spaziatrice per un rapido ripristino del gioco.
-- **Map Water**: attiva/disattiva lo sfondo.
-- **Map Padding**: aggiungi spazio sotto la mappa.
-- **Image Background**: cambia l'immagine di sfondo con le immagini preselezionate o aggiungine una tua in /images.
-- **Inc Label**: nascondi l'etichetta del cursore.
-- **Inc Names**: attiva/disattiva i nomi.
-- **Inc Bold**: attiva/disattiva i nomi in grassetto.
-- **Inc Flags**: attiva/disattiva i flag.
-- **Dis.Col**: disattiva i diversi colori.
-- **PTL Url**: modifica automaticamente l'URL di un quiz in Place The Labels.
-- **Performance**: rimuove gli elementi non necessari per prestazioni migliori.
-- **Skib Out Dawg**: ingrandisci e rimpicciolisci la mappa stessa. - **IMPOSTAZIONI PTL**: carica le impostazioni utilizzate per PTL.
+**in italian(viz release notes)**
 
 ---
 
