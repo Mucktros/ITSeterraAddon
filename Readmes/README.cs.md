@@ -39,7 +39,7 @@ Zvláštní poděkování patří **NekoXIII** za vytvoření původního Seterr
 
 ### Pokyny k instalaci Chromium
 
-1. Stáhněte si nejnovější verzi z [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases/tag/Chrome) (nezapomeňte si **stáhnout vydání, nikoli zdrojový kód**).
+1. Stáhněte si nejnovější verzi z [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases) (nezapomeňte si **stáhnout vydání, nikoli zdrojový kód**).
 2. Rozbalte složku vydání a extrahujte soubory.
 3. Otevřete v prohlížeči stránku Rozšíření:
  - V prohlížeči Chrome: Přejděte na adresu `chrome://extensions/`
@@ -63,7 +63,7 @@ A je to!
 ### Pokyny k ruční instalaci Firefoxu
 
 
-1. Stáhněte si nejnovější verzi z [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases/tag/Firefox) (nezapomeňte si **stáhnout vydání, nikoli zdrojový kód**).
+1. Stáhněte si nejnovější verzi z [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases) (nezapomeňte si **stáhnout vydání, nikoli zdrojový kód**).
 2. Přejděte na `about:debugging`
 3. Klikněte na **Tento Firefox**.
 4. Klikněte na On Load **Temporary Addon-on**.
