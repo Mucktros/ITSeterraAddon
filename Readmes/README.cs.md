@@ -55,21 +55,7 @@ A je to!
 ---
 
 ## Instalace pro Firefox 📥
-1. Nainstalujte doplněk z obchodu s doplňky firefox: https://addons.mozilla.org/en-US/firefox/addon/afdusrt-s-steera-ptl-features/
-2. To je ono!
-
-**Pokud odkaz nefunguje, udělejte toto**:
-
-### Pokyny k ruční instalaci Firefoxu
-
-
-1. Stáhněte si nejnovější verzi z [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases) (nezapomeňte si **stáhnout vydání, nikoli zdrojový kód**).
-2. Přejděte na `about:debugging`
-3. Klikněte na **Tento Firefox**.
-4. Klikněte na On Load **Temporary Addon-on**.
-5. Vyberte soubor .Zip a klikněte na Otevřít.
-
-A je to!
+1. more to zvladnes kurva
 
 ---
 
