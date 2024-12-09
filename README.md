@@ -59,21 +59,7 @@ And that's it!
 ---
 
 ## Installation For Firefox 📥
-1. Install the add-on from the firefox add-on store: https://addons.mozilla.org/en-US/firefox/addon/afdusrt-s-steera-ptl-features/ 
-2. That's it!
-
-**If The Link Doesnt Work Do This**:
-
-### Firefox Manual Installation Instructions
-
-
-1. Download the latest release from the [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases) (make sure to **download the release, not the source code**).
-2. Go to `about:debugging`
-3. Click On **This Firefox**.
-4. Click On Load **Temporary Addon-on**.
-5. Select the .Zip file and click Open.
-
-And thats's it!
+1. just do it
 
 ---
 
