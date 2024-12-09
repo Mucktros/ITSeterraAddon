@@ -54,20 +54,7 @@ Ed ecco fatto!
 ---
 
 ## Installazione per Firefox 📥
-1. Installa il componente aggiuntivo dallo store dei componenti aggiuntivi di Firefox: https://addons.mozilla.org/en-US/firefox/addon/afdusrt-s-steera-ptl-features/
-2. Ecco fatto!
-
-**Se il collegamento non funziona, fai così**:
-
-### Istruzioni per l'installazione manuale di Firefox
-
-1. Scarica l'ultima versione da [ITSeterraAddon GitHub Releases](https://github.com/Mucktros/ITSeterraAddon/releases) (assicurati di **scaricare la versione, non il codice sorgente**).
-2. Vai su `about:debugging`
-3. Fai clic su **Questo Firefox**.
-4. Fai clic su Carica **Componente aggiuntivo temporaneo**.
-5. Seleziona il file .Zip e fai clic su Apri.
-
-Ed ecco fatto!
+1. si si estar muy bien
 
 ---
 
