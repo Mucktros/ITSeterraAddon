@@ -60,7 +60,6 @@ And that's it!
 
 ## Installation For Firefox 📥
 1. just do it
-![mucktro](https://github.com/user-attachments/assets/9e45ab81-4c1c-44ee-95eb-e8d64fed2751)
 
 ---
 
