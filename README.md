@@ -68,4 +68,4 @@ And that's it!
 
 - **NekoXIII** – For the original SeterraAddon, which laid the groundwork for this project.
 - **Mucktros** – Developer of **ITSeterraAddon** with new features and customizations.
-- **Afdusrt** - Developer of the features: skib, and performance. Also the dev of Firefox version.
+- **Afdusrt** - Developer of the features: skib, and performance and also jit routes. Also the dev of Firefox version.
