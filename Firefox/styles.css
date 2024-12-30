@@ -72,32 +72,47 @@
     width: 100%;
     font-size: 14px;
     cursor: pointer;
-    background-color: #555;
+    background-color: #232728;
     color: white;
-    margin-top: 5px;
+    margin-top: 0px;
     transition: background-color 0.3s;
 }
 
 .toggle-button.on {
-    background-color: #00cc00;
+    background-color: #43a5d4;
 }
 .toggle-button:hover {
-    background-color: #777; /* Darker shade for hover when not on */
+    background-color: #464e50; /* Darker shade for hover when not on */
 }
 .toggle-button.on:hover {
-    background-color: #006400; /* Darker shade for hover when on */
+    background-color: #2E7394; /* Darker shade for hover when on */
 }
 .normal-button {
 	height: 40px;
-    margin-top: 5px;
+    margin-top: 0px;
     width: 100%;
     font-size: 14px;
     cursor: pointer;
-    border: 1px solid #999;
-    background-color: #ccc;
-    color: #333;
+    background-color: #232728;
+    color: white;
     transition: background-color 0.3s;
 }
 .normal-button:hover {
-    background-color: #bbb;
+    background-color: #464e50;
+}
+.mod-indicators-container {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column; /* Stack indicators in a column */
+    z-index: 1000; /* Ensure it stays on top */
+    align-items: flex-end; /* Align indicators to the right */
+}
+
+.mod-indicator {
+    font-size: 20px;
+    color: #43a5d4;
+    background-color: black;
+    text-align: right; /* Align text to the right */
 }

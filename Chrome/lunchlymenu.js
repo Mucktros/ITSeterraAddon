@@ -27,6 +27,8 @@ function rsashowalllines() {
     return;
   }
 
+  const lineLengths = [];
+
   for (let i = 0; i < dots.length - 1; i++) {
     const startDot = dots[i];
     const endDot = dots[i + 1];
@@ -41,10 +43,38 @@ function rsashowalllines() {
     line.setAttribute('y2', endDot.getAttribute('cy'));
     line.setAttribute('stroke', 'blue');
     line.setAttribute('stroke-width', 1);
-	line.style.pointerEvents = 'none';
+    line.style.pointerEvents = 'none';
     svg.appendChild(line);
+
+    // Calculate the length of the line
+    const length = calculateLineLength(startDot, endDot);
+    lineLengths.push(length);
   }
+
+  // Calculate and log the average line length
+  const averageLength = calculateAverageLineLength(lineLengths);
+  console.log('Average Line Length:', averageLength);
 }
+
+function calculateLineLength(startDot, endDot) {
+  const x1 = parseFloat(startDot.getAttribute('cx'));
+  const y1 = parseFloat(startDot.getAttribute('cy'));
+  const x2 = parseFloat(endDot.getAttribute('cx'));
+  const y2 = parseFloat(endDot.getAttribute('cy'));
+
+  // Use the distance formula to calculate the length
+  return Math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2);
+}
+
+function calculateAverageLineLength(lineLengths) {
+  if (lineLengths.length === 0) {
+    return 0;
+  }
+
+  const totalLength = lineLengths.reduce((sum, length) => sum + length, 0);
+  return totalLength / lineLengths.length;
+}
+
 // Global state variables
 let currentStep = 0;
 let linesDrawn = 0;
@@ -83,7 +113,7 @@ function findroutemakecircles() {
       centerY = parseFloat(existingCircle.getAttribute('cy'));
     } else {
       // Get all path elements within the g element
-      const pathElements = gElement.querySelectorAll('path');
+      const pathElements = gElement.querySelectorAll('path, polygon');
 
       // Initialize bounding box variables
       let minX = Infinity;
@@ -277,7 +307,7 @@ function highlightRegionBasedOnTooltip() {
     const svgContainer = document.querySelector('#svgpoint');
     if (!svgContainer) return;
 
-    const allRegions = svgContainer.querySelectorAll('path, circle');
+    const allRegions = svgContainer.querySelectorAll('path, circle, polygon');
     allRegions.forEach(region => {
         region.style.fill = '';
     });
@@ -285,7 +315,7 @@ function highlightRegionBasedOnTooltip() {
     const targetRegion = svgContainer.querySelector(`#${CSS.escape(targetRegionId)}`);
     if (!targetRegion) return;
 
-    const regionElements = targetRegion.querySelectorAll('path, circle');
+    const regionElements = targetRegion.querySelectorAll('path, circle, polygon');
     if (regionElements.length > 0) {
         regionElements.forEach(element => {
             element.style.fill = 'gold';
@@ -334,7 +364,7 @@ function highlighterOFF() {
     if (isHighlighterActive) {
         isHighlighterActive = false;
         waitForElement('#svgpoint', () => {
-            const allRegions = document.querySelectorAll('#svgpoint path, #svgpoint circle');
+            const allRegions = document.querySelectorAll('#svgpoint path, #svgpoint circlem #svgpoint polygon');
             allRegions.forEach(region => {
                 region.style.fill = '';
             });
@@ -346,8 +376,116 @@ function highlighterOFF() {
     }
 }
 
+// indicators 
+const indicatorsContainer = document.createElement("div");
+indicatorsContainer.classList.add("mod-indicators-container");
+document.body.appendChild(indicatorsContainer);
+
+const boldnameIndicator = document.createElement("div");
+boldnameIndicator.textContent = "Bold Names";
+boldnameIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(boldnameIndicator);
+
+const remclickonIndicator = document.createElement("div");
+remclickonIndicator.textContent = "Click on text";
+remclickonIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(remclickonIndicator);
+
+const dimoverlayIndicator = document.createElement("div");
+dimoverlayIndicator.textContent = "Dim Screen";
+dimoverlayIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(dimoverlayIndicator);
+
+const keybindtoggleIndicator = document.createElement("div");
+keybindtoggleIndicator.textContent = "Keybinds";
+keybindtoggleIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(keybindtoggleIndicator);
+
+const mapresetIndicator = document.createElement("div");
+mapresetIndicator.textContent = "Space Map Reset";
+mapresetIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(mapresetIndicator);
+
+const mappaddingIndicator = document.createElement("div");
+mappaddingIndicator.textContent = "Map Padding";
+mappaddingIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(mappaddingIndicator);
+
+const blackbgIndicator = document.createElement("div");
+blackbgIndicator.textContent = "Black BG";
+blackbgIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(blackbgIndicator);
+
+const performancemodeIndicator = document.createElement("div");
+performancemodeIndicator.textContent = "Performance mode";
+performancemodeIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(performancemodeIndicator);
+
+const mobilemodeIndicator = document.createElement("div");
+mobilemodeIndicator.textContent = "Mobile Mode";
+mobilemodeIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(mobilemodeIndicator);
+
+const toggledisabledcolorsIndicator = document.createElement("div");
+toggledisabledcolorsIndicator.textContent = "Disabled Colors";
+toggledisabledcolorsIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(toggledisabledcolorsIndicator);
+
+
+const nowaterIndicator = document.createElement("div");
+nowaterIndicator.textContent = "NO Water";
+nowaterIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(nowaterIndicator);
+
+const jitonIndicator = document.createElement("div");
+jitonIndicator.textContent = "Nearby Lines";
+jitonIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(jitonIndicator);
+
+const jitallIndicator = document.createElement("div");
+jitallIndicator.textContent = "All Lines";
+jitallIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(jitallIndicator);
+
+const jithighlighterIndicator = document.createElement("div");
+jithighlighterIndicator.textContent = "Highlighter";
+jithighlighterIndicator.classList.add("mod-indicator");
+indicatorsContainer.appendChild(jithighlighterIndicator);
+
+// Indicator TOGGLE
+const IndicatortoggleButton = document.createElement("button");
+IndicatortoggleButton.textContent = "Toggle Indicators [END]";
+IndicatortoggleButton.classList.add("toggle-button"); // Add the base class
+IndicatortoggleButton.dataset.state = "on"; // Initial state is off
+IndicatortoggleButton.addEventListener("click", () => {
+	toggleIndicatortoggleButton(IndicatortoggleButton);
+});
+toggleIndicatortoggleButton(IndicatortoggleButton);
+function toggleIndicatortoggleButton(button) {
+    if (button.dataset.state === "off") {
+		button.classList.remove("on"); // Add the 'on' class
+        button.dataset.state = "on";
+        indicatorsContainer.style.display = "none";
+
+    } else {
+		button.classList.add("on"); // Add the 'on' class
+        button.dataset.state = "off";
+        indicatorsContainer.style.display = "flex";
+    }
+}
+
 
 // KEYBINDS
+function toggledimoverlayhandleKeydown(event) {
+    if (event.key === 'Home') {
+        toggledimoverlayButton(dimoverlayButton);
+    }
+}
+function toggleindicatorshandleKeydown(event) {
+    if (event.key === 'End') {
+        toggleIndicatortoggleButton(IndicatortoggleButton);
+    }
+}
 function togglebindshandleKeydown(event) {
     if (event.key === 'Delete') {
         togglekeybindtoggleButton(keybindtoggleButton);
@@ -378,15 +516,9 @@ function performancehandleKeydown(event) {
         toggleperformancemodeButton(performancemodeButton);
     }
 }
-
 function nowaterhandleKeydown(event) {
     if (event.key === '[' || event.key === 'ú') {
         togglenowaterButton(nowaterButton);
-    }
-}
-function rebootallhandleKeydown(event) {
-    if (event.key === '.') {
-        rebootall();
     }
 }
 function jitonhandleKeydown(event) {
@@ -417,13 +549,15 @@ function togglekeybindtoggleButton(button) {
     if (button.dataset.state === "off") {
 		button.classList.remove("on"); // Add the 'on' class
         button.dataset.state = "on";
+        keybindtoggleIndicator.style.display = "none";
         //document.removeEventListener("keydown", menukeybindhandleKeydown);togglebindshandleKeydown
 	//document.removeEventListener("keydown", togglebindshandleKeydown);
+		document.removeEventListener("keydown", toggledimoverlayhandleKeydown);
+		document.removeEventListener("keydown", toggleindicatorshandleKeydown);
         document.removeEventListener("keydown", performancehandleKeydown);
         document.removeEventListener("keydown", mappaddinghandleKeydown);
         document.removeEventListener("keydown", blackbghandleKeydown);
         document.removeEventListener("keydown", mapresethandleKeydown);
-        document.removeEventListener("keydown", rebootallhandleKeydown);
         document.removeEventListener("keydown", jitonhandleKeydown);
         document.removeEventListener("keydown", jitallhandleKeydown);
         document.removeEventListener("keydown", jithighlighterhandleKeydown);
@@ -431,23 +565,25 @@ function togglekeybindtoggleButton(button) {
     } else {
 		button.classList.add("on"); // Add the 'on' class
         button.dataset.state = "off";
+        keybindtoggleIndicator.style.display = "block";
+        document.addEventListener("keydown", toggledimoverlayhandleKeydown);
+        document.addEventListener("keydown", toggleindicatorshandleKeydown);
         document.addEventListener("keydown", menukeybindhandleKeydown);
 	document.addEventListener("keydown", togglebindshandleKeydown);
         document.addEventListener("keydown", mappaddinghandleKeydown);
         document.addEventListener("keydown", blackbghandleKeydown);
         document.addEventListener("keydown", performancehandleKeydown);
         document.addEventListener("keydown", mapresethandleKeydown);
-        document.addEventListener("keydown", rebootallhandleKeydown);
         document.addEventListener("keydown", jitonhandleKeydown);
         document.addEventListener("keydown", jitallhandleKeydown);
         document.addEventListener("keydown", jithighlighterhandleKeydown);
         document.addEventListener("keydown", nowaterhandleKeydown);
     }
 }
-//Map Reset Button
+//Space Map Reset Button
 const mapresetButton = document.createElement("button");
 mapresetButton.id = "mapresetButton";
-mapresetButton.textContent = "Map Reset [U]";
+mapresetButton.textContent = "Space Map Reset [U]";
 mapresetButton.classList.add("toggle-button"); // Add the base class
 mapresetButton.dataset.state = "on"; // Initial state is off
 mapresetButton.addEventListener("click", () => {
@@ -459,10 +595,12 @@ function togglemapresetButton(button) {
 		button.classList.remove("on"); // Add the 'on' class
         button.dataset.state = "on";
         document.removeEventListener("keydown", spaceKeyDownHandler)
+        mapresetIndicator.style.display = "none";
     } else {
 		button.classList.add("on"); // Add the 'on' class
         button.dataset.state = "off";
         document.addEventListener("keydown", spaceKeyDownHandler)
+        mapresetIndicator.style.display = "block";
     }
 }
 function spaceKeyDownHandler(event) {
@@ -492,10 +630,12 @@ function togglemappaddingButton(button) {
 		button.classList.remove("on"); // Add the 'on' class
         button.dataset.state = "on";
         if (document.getElementsByClassName("extra-info_extraInfo__80Tci")) { let a = document.getElementsByClassName("extra-info_extraInfo__80Tci"); if (a[0]) { a[0].style.marginTop = "-70px" }; }
+		mappaddingIndicator.style.display = "none";
     } else {
 		button.classList.add("on"); // Add the 'on' class
         button.dataset.state = "off";
         if (document.getElementsByClassName("extra-info_extraInfo__80Tci")) { let a = document.getElementsByClassName("extra-info_extraInfo__80Tci"); if (a[0]) { a[0].style.marginTop = "400px" }; }
+		mappaddingIndicator.style.display = "block";
     }
 }
 //Performance Mode Button
@@ -512,10 +652,12 @@ function toggleperformancemodeButton(button) {
 		button.classList.remove("on"); // Add the 'on' class
         button.dataset.state = "on";
         perfOFF();
+        performancemodeIndicator.style.display = "none";
     } else {
 		button.classList.add("on"); // Add the 'on' class
         button.dataset.state = "off";
         perfON();
+        performancemodeIndicator.style.display = "block";
     }
 }
 function performanceON(selectors) {
@@ -577,10 +719,12 @@ function toggleblackbgButton(button) {
 		button.classList.remove("on"); // Add the 'on' class
         button.dataset.state = "on";
         blackbgOFF();
+        blackbgIndicator.style.display = "none";
     } else {
 		button.classList.add("on"); // Add the 'on' class
         button.dataset.state = "off";
         blackbgON();
+        blackbgIndicator.style.display = "block";
     }
 }
 function blackbgOFF() {
@@ -638,10 +782,12 @@ function togglemobilemodeButton(button) {
 		button.classList.remove("on"); // Add the 'on' class
 		button.dataset.state = "on";
         mobileOFF();
+        mobilemodeIndicator.style.display = "none";
     } else {
 		button.classList.add("on"); // Remove the 'on' class
         button.dataset.state = "off";
         mobileON();
+        mobilemodeIndicator.style.display = "block";
     }
 }
 function mobileON() {
@@ -714,10 +860,12 @@ function toggledisabledcolorsButton(button) {
 		button.classList.remove("on"); // Add the 'on' class
         button.dataset.state = "on";
         var style = document.createElement('style'); style.innerHTML = `.seterra_root__NV8MT { --seterra-color-green-dark: #166c38 !important; }`; document.head.appendChild(style);
+		toggledisabledcolorsIndicator.style.display = "none";
     } else {
 		button.classList.add("on"); // Remove the 'on' class
         button.dataset.state = "off";
         var style = document.createElement('style'); style.innerHTML = `.seterra_root__NV8MT { --seterra-color-green-dark: #1e8346 !important; }`; document.head.appendChild(style);
+		toggledisabledcolorsIndicator.style.display = "block";
     }
 }
 //MC Water Button
@@ -737,10 +885,12 @@ function togglenowaterButton(button) {
 		button.classList.remove("on"); // Add the 'on' class
 		button.dataset.state = "on";
         waterON();
+        nowaterIndicator.style.display = "none";
     } else {
 		button.classList.add("on"); // Remove the 'on' class
         button.dataset.state = "off";
         waterOFF();
+        nowaterIndicator.style.display = "block";
     }
 }
 
@@ -754,18 +904,22 @@ function skib() {
 }
 const skibButton = document.createElement("button");
 skibButton.textContent = "Skib Out";
-skibButton.style = "height: 40px; margin-top: 5px; width: 100%; font-size: 14px; cursor: pointer; background-color: #ccc; color: #333;";
+skibButton.classList.add("normal-button");
 skibButton.addEventListener("click", skib);
-skibButton.addEventListener("mouseover", () => {
-	skibButton.style.backgroundColor = "#bbb";
-});
-skibButton.addEventListener("mouseout", () => {
-	skibButton.style.backgroundColor = "#ccc";
-});
 //Reboot Cards
-function labelOFF() { document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].style.opacity = "0" }
+function labelOFF() {
+    const tooltip = document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0];
+    if (tooltip) {
+        tooltip.style.opacity = "0";
+    }
+}
 
-function labelON() { document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].style.opacity = "1" }
+function labelON() {
+    const tooltip = document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0];
+    if (tooltip) {
+        tooltip.style.opacity = "1";
+    }
+}
 
 function namesOFF() {
     const elements = document.getElementsByClassName('game-header_withDivider__ZHYAO');
@@ -829,37 +983,173 @@ function flagsON() {
     }
 }
 //Label Reboot card
-const rebootlabelButton = document.createElement("button");
-rebootlabelButton.textContent = "Remove Label";
-rebootlabelButton.classList.add("normal-button");
-rebootlabelButton.addEventListener("click", labelOFF);
-const labelOnButton = document.createElement("button");
-// label on
-labelOnButton.textContent = "Show Label";
-labelOnButton.classList.add("normal-button");
-labelOnButton.addEventListener("click", labelON);
+const labelButton = document.createElement("button");
+labelButton.textContent = "Cursor Label";
+labelButton.classList.add("toggle-button"); // Add the base class
+labelButton.dataset.state = "off"; // Initial state is off
+labelButton.addEventListener("click", () => {
+    toggleLabelButton(labelButton);
+});
+toggleLabelButton(labelButton);
+
+function toggleLabelButton(button) {
+    if (button.dataset.state === "off") {
+        button.classList.add("on"); // Add the 'on' class
+        button.dataset.state = "on";
+        labelON();
+    } else {
+        button.classList.remove("on"); // Remove the 'on' class
+        button.dataset.state = "off";
+        labelOFF();
+    }
+}
 //Names Reboot card
-const rebootnamesButton = document.createElement("button");
-rebootnamesButton.textContent = "Remove Names";
-rebootnamesButton.classList.add("normal-button");
-rebootnamesButton.addEventListener("click", namesOFF);
-const NamesOnButton = document.createElement("button");
-NamesOnButton.textContent = "Show Names";
-NamesOnButton.classList.add("normal-button");
-NamesOnButton.addEventListener("click", namesON);
+const namesButton = document.createElement("button");
+namesButton.textContent = "Names / Top Header";
+namesButton.classList.add("toggle-button"); // Add the base class
+namesButton.dataset.state = "on"; // Initial state is off
+
+// Add event listener to the button
+namesButton.addEventListener("click", () => {
+    toggleNamesButton(namesButton);
+});
+
+// Define the toggle function
+function toggleNamesButton(button) {
+    if (button.dataset.state === "off") {
+        button.classList.add("on"); // Add the 'on' class
+        button.dataset.state = "on";
+        namesON();
+    } else {
+        button.classList.remove("on"); // Remove the 'on' class
+        button.dataset.state = "off";
+        namesOFF();
+    }
+}
 //Flags Reboot card
-const rebootflagsButton = document.createElement("button");
-rebootflagsButton.textContent = "Remove Flags";
-rebootflagsButton.classList.add("normal-button");
-rebootflagsButton.addEventListener("click", flagsOFF);
-const FlagsOnButton = document.createElement("button");
-FlagsOnButton.textContent = "Show Flags";
-FlagsOnButton.classList.add("normal-button");
-FlagsOnButton.addEventListener("click", flagsON);
+const flagsButton = document.createElement("button");
+flagsButton.textContent = "Flags";
+flagsButton.classList.add("toggle-button"); // Add the base class
+flagsButton.dataset.state = "on"; // Initial state is off
+
+// Add event listener to the button
+flagsButton.addEventListener("click", () => {
+    toggleFlagsButton(flagsButton);
+});
+
+// Define the toggle function
+function toggleFlagsButton(button) {
+    if (button.dataset.state === "off") {
+        button.classList.add("on"); // Add the 'on' class
+        button.dataset.state = "on";
+        flagsON();
+    } else {
+        button.classList.remove("on"); // Remove the 'on' class
+        button.dataset.state = "off";
+        flagsOFF();
+    }
+}
+
+//Bold Name button
+function boldnamesON() {
+        if (document.getElementsByClassName('game-header_withDivider__ZHYAO')[2]) {
+            document.getElementsByClassName('game-header_withDivider__ZHYAO')[2].children[0].style.fontWeight = "bold";
+        }
+        if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0]) {
+            if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span')) {
+                if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span').querySelector('strong')) {
+                    document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span').querySelector('strong').style.fontWeight = "bold";
+                    if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span').querySelector('strong').style.fontWeight == "bold") {
+                        boldNamesOopsie = false;
+                    }
+                }
+
+            }
+
+        }
+}
+function boldnamesOFF() {
+        if (document.getElementsByClassName('game-header_withDivider__ZHYAO')[2]) {
+            document.getElementsByClassName('game-header_withDivider__ZHYAO')[2].children[0].style.fontWeight = "normal";
+        }
+        if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0]) {
+            if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span')) {
+                if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span').querySelector('strong')) {
+                    document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span').querySelector('strong').style.fontWeight = "normal";
+                    if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span').querySelector('strong').style.fontWeight == "normal") {
+                        boldNamesOopsie = false;
+                    }
+
+                }
+
+            }
+        }
+    }
+
+const boldnameButton = document.createElement("button");
+boldnameButton.textContent = "Bold Names";
+boldnameButton.classList.add("toggle-button"); // Add the base class
+boldnameButton.dataset.state = "on"; // Initial state is off
+boldnameButton.addEventListener("click", () => {
+	toggleboldnameButton(boldnameButton);
+});
+toggleboldnameButton(boldnameButton);
+function toggleboldnameButton(button) {
+    if (button.dataset.state === "off") {
+		button.classList.remove("on"); // Add the 'on' class
+		button.dataset.state = "on";
+        boldnamesOFF();
+        boldnameIndicator.style.display = "none";
+    } else {
+		button.classList.add("on"); // Remove the 'on' class
+        button.dataset.state = "off";
+        boldnamesON();
+        boldnameIndicator.style.display = "block";
+    }
+}
+
+//Click on text button
+function remclickonON() {
+        if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0]) {
+
+            if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span')) {
+                document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span').childNodes[0].textContent = "";
+            }
+        }
+}
+function remclickonOFF() {
+        if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0]) {
+
+            if (document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span')) {
+                document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].querySelector('span').childNodes[0].textContent = "Click on ";
+            }
+        }
+}
+const remclickonButton = document.createElement("button");
+remclickonButton.textContent = "Label Click On Text";
+remclickonButton.classList.add("toggle-button"); // Add the base class
+remclickonButton.dataset.state = "on"; // Initial state is off
+remclickonButton.addEventListener("click", () => {
+	toggleremclickonButton(remclickonButton);
+});
+toggleremclickonButton(remclickonButton);
+function toggleremclickonButton(button) {
+    if (button.dataset.state === "off") {
+		button.classList.remove("on"); // Add the 'on' class
+		button.dataset.state = "on";
+        remclickonON();
+        remclickonIndicator.style.display = "none";
+    } else {
+		button.classList.add("on"); // Remove the 'on' class
+        button.dataset.state = "off";
+        remclickonOFF();
+        remclickonIndicator.style.display = "block";
+    }
+}
 //Jit Buttons
 //Jit On Button
 const jitonButton = document.createElement("button");
-jitonButton.textContent = "Enable Jit [J]";
+jitonButton.textContent = "Nearby Lines [J]";
 jitonButton.classList.add("toggle-button"); // Add the base class
 jitonButton.dataset.state = "off"; // Initial state is off
 jitonButton.addEventListener("click", () => {
@@ -871,15 +1161,17 @@ function togglejitonButton(button) {
 		button.classList.remove("on"); // Add the 'on' class
 		button.dataset.state = "on";
         routeassistantOFF();
+        jitonIndicator.style.display = "none";
     } else {
 		button.classList.add("on"); // Remove the 'on' class
         button.dataset.state = "off";
         routeassistantON();
+        jitonIndicator.style.display = "block";
     }
 }
 //Jit All Button
 const jitallButton = document.createElement("button");
-jitallButton.textContent = "Show All Jit [K]";
+jitallButton.textContent = "Show All Lines [K]";
 jitallButton.classList.add("toggle-button"); // Add the base class
 jitallButton.dataset.state = "off"; // Initial state is off
 jitallButton.addEventListener("click", () => {
@@ -891,15 +1183,17 @@ function togglejitallButton(button) {
 		button.classList.remove("on"); // Add the 'on' class
 		button.dataset.state = "on";
         clearDotsAndLines();
+        jitallIndicator.style.display = "none";
     } else {
 		button.classList.add("on"); // Remove the 'on' class
         button.dataset.state = "off";
         routeassistantSHOWALL();
+        jitallIndicator.style.display = "block";
     }
 }
 //Jit Highlighter Button
 const jithighlighterButton = document.createElement("button");
-jithighlighterButton.textContent = "Jit Highlighter [L]";
+jithighlighterButton.textContent = "Highlighter [L]";
 jithighlighterButton.classList.add("toggle-button"); // Add the base class
 jithighlighterButton.dataset.state = "off"; // Initial state is off
 jithighlighterButton.addEventListener("click", () => {
@@ -911,16 +1205,71 @@ function togglejithighlighterButton(button) {
 		button.classList.remove("on"); // Add the 'on' class
 		button.dataset.state = "on";
         highlighterOFF();
+        jithighlighterIndicator.style.display = "none";
     } else {
 		button.classList.add("on"); // Remove the 'on' class
         button.dataset.state = "off";
         highlighterON();
+        jithighlighterIndicator.style.display = "block";
     }
 }
+
+//Dim button
+function createDimOverlay() {
+  if (document.getElementById('dim-overlay')) return;
+  const overlay = document.createElement('div');
+  overlay.id = 'dim-overlay';
+  overlay.style.position = 'fixed';
+  overlay.style.top = '0';
+  overlay.style.left = '0';
+  overlay.style.width = '100%';
+  overlay.style.height = '100%';
+  overlay.style.backgroundColor = 'black';
+  overlay.style.opacity = '0.5';
+  overlay.style.zIndex = '999999';
+  overlay.style.pointerEvents = 'none';
+  overlay.style.display = 'none';
+  document.body.appendChild(overlay);
+}
+function showDimOverlay() {
+  const overlay = document.getElementById('dim-overlay');
+  if (overlay) {
+    overlay.style.display = 'block';
+  }
+}
+function hideDimOverlay() {
+  const overlay = document.getElementById('dim-overlay');
+  if (overlay) {
+    overlay.style.display = 'none';
+  }
+}
+createDimOverlay();
+const dimoverlayButton = document.createElement("button");
+dimoverlayButton.textContent = "Dim Screen [HOME]";
+dimoverlayButton.classList.add("toggle-button"); // Add the base class
+dimoverlayButton.dataset.state = "off"; // Initial state is off
+dimoverlayButton.addEventListener("click", () => {
+	toggledimoverlayButton(dimoverlayButton);
+});
+toggledimoverlayButton(dimoverlayButton);
+function toggledimoverlayButton(button) {
+    if (button.dataset.state === "off") {
+		button.classList.remove("on"); // Add the 'on' class
+		button.dataset.state = "on";
+        hideDimOverlay();
+        dimoverlayIndicator.style.display = "none";
+    } else {
+		button.classList.add("on"); // Remove the 'on' class
+        button.dataset.state = "off";
+        showDimOverlay();
+        dimoverlayIndicator.style.display = "block";
+    }
+}
+
 //MENU
 function openmenu() {
     const lunchlyMain = document.getElementById("lunchlyAddon");
-    const openmenubutton = document.getElementById("openMenuButton");
+    //const openmenubutton = document.getElementById("openMenuButton");
 
     if (lunchlyMain.style.display === "grid") {
         lunchlyMain.style.display = "none";
@@ -933,39 +1282,36 @@ function lunchlyForm() {
         const lunchlyMain = document.createElement("div");
         lunchlyMain.id = "lunchlyAddon";
         lunchlyMain.className = "lunchlymenu";
-        lunchlyMain.style = "justify-content: center; aling-items: center; position: fixed; color: white; top: 0px; left: 0px; z-index: 1000; background-color: rgba(0, 0, 0, 0.8); width: 100%; height: 100%;";
+        lunchlyMain.style = "justify-content: center; position: fixed; color: white; top: 0px; left: 0px; z-index: 1000; width: 100%; height: 100%; backdrop-filter: blur(10px);";
+        //lunchlyMain.style = "justify-content: center; aling-items: center; position: fixed; color: white; top: 0px; left: 0px; z-index: 1000; background-color: rgba(0, 0, 0, 0.8); width: 100%; height: 100%;";
         lunchlyMain.style.display = "none";
-        lunchlyMain.style.gridTemplateColumns = "200px 200px 200px 200px";
+        lunchlyMain.style.gridTemplateColumns = "200px 200px 200px 200px 200px";
         lunchlyMain.style.gridTemplateRows = "100px 1fr";
         lunchlyMain.style.gap = "10px"; // Adds space between grid items
         
-        const openmenubutton = document.createElement("button");
-        openmenubutton.id = "openMenuButton";
-        openmenubutton.classList.add("open-button");
-        openmenubutton.textContent = "open menu";
-        openmenubutton.addEventListener("click", openmenu);
+
         
         document.body.appendChild(lunchlyMain);
-        //document.body.appendChild(openmenubutton);
         
         const column0 = document.createElement("div");
-			  column0.style = "grid-column: span 4;";
+			  column0.style = "grid-column: span 5;";
         const column1 = document.createElement("div");
         const column2 = document.createElement("div");
         const column3 = document.createElement("div");
 		const column4 = document.createElement("div");
-
-		lunchlyMain.appendChild(column0);
+		const column5 = document.createElement("div");
+	
+		//lunchlyMain.appendChild(column0);
         lunchlyMain.appendChild(column1);
         lunchlyMain.appendChild(column2);
         lunchlyMain.appendChild(column3);
 		lunchlyMain.appendChild(column4);
+		lunchlyMain.appendChild(column5);
 		
 		const header1 = document.createElement("div");
         header1.textContent = "Website Settings";
         header1.style = "padding: 5px; text-align: center;";
         column1.appendChild(header1);
-        column1.appendChild(keybindtoggleButton);
         column1.appendChild(mapresetButton);
         column1.appendChild(mappaddingButton);
 		column1.appendChild(blackbgButton);
@@ -984,20 +1330,27 @@ function lunchlyForm() {
         header3.textContent = "Cosmetic Changes";
         header3.style = "padding: 5px; text-align: center;";
         column3.appendChild(header3);
-        column3.appendChild(rebootlabelButton);
-		column3.appendChild(labelOnButton);
-        column3.appendChild(rebootnamesButton);
-		column3.appendChild(NamesOnButton);
-        column3.appendChild(rebootflagsButton);
-		column3.appendChild(FlagsOnButton);
+        column3.appendChild(labelButton);
+        column3.appendChild(namesButton);
+        column3.appendChild(flagsButton);
+        column3.appendChild(boldnameButton);
+        column3.appendChild(remclickonButton);
         
 		const header4 = document.createElement("div");
-        header4.textContent = "Jit settings";
+        header4.textContent = "Combat";
         header4.style = "padding: 5px; text-align: center;";
         column4.appendChild(header4);
         column4.appendChild(jitonButton);
         column4.appendChild(jitallButton);
         column4.appendChild(jithighlighterButton);
+        
+		const header5 = document.createElement("div");
+        header5.textContent = "Menu settings";
+        header5.style = "padding: 5px; text-align: center;";
+        column5.appendChild(header5);
+        column5.appendChild(IndicatortoggleButton);
+		column5.appendChild(keybindtoggleButton);
+		column5.appendChild(dimoverlayButton);
     }
 }
 lunchlyForm();

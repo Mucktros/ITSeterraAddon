@@ -28,7 +28,7 @@
         "images/water.gif",
         "icons/seterra.png"
       ],
-      "matches": ["<all_urls>"]
+      "matches": [ "<all_urls>" ]
     }
   ],
   "action": {
