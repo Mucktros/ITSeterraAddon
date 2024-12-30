@@ -1,61 +1,79 @@
 .map-styles_labelBox__gTsp5 {
-  display: none;
+    display: none;
 }
+
 .map-styles_extendedHitboxHidden__PNW0h {
-  opacity: 0;
+    opacity: 0;
 }
+
 .game-tooltip_tooltip__w_58_ {
-  opacity: 0;
+    opacity: 1;
 }
+
 .game-header_withDivider__ZHYAO {
-  display: none;
+    display: block;
 }
+
 .game-header_skipQuestionButton__ZmN_y {
-  display: none;
+    display: none;
 }
+
 .corner-image_wrapper__ej_p1 {
-  display: none;
+    display: block;
 }
+
 .language-list_root__uHQD6 {
-  border: none;
-  margin-top: 0rem;
-  padding: 0rem;
+    border: none;
+    margin-top: 0rem;
+    padding: 0rem;
 }
+
 .language-list_list__vKyJk {
-  margin-top: 0rem;
+    margin-top: 0rem;
 }
+
 .game-footer_footer__kv0y3 {
-  padding: 0 0rem 0rem;
+    padding: 0 0rem 0rem;
 }
+
 .highscore_root__5AF9m {
-  border: none;
-  padding: 0rem 0rem;
+    border: none;
+    padding: 0rem 0rem;
 }
+
 .highscore_table__oKrYg {
-  margin-top: 0rem;
+    margin-top: 0rem;
 }
+
 .highscore_buttonContainer__dO8BP {
-  margin-top: 0rem;
+    margin-top: 0rem;
 }
+
 .game-header_wrapper__JDf24 {
-  background: hsla(0, 0%, 100%, 0);
+    background: hsla(0, 0%, 100%, 0);
 }
+
 .game-footer_settingsButton__qIHi5 {
-	display: none;
+    display: none;
 }
+
 .audio-player_playButton__vwNa2 {
-	display: none;
+    display: none;
 }
+
 .game-page_gameAreaWrapper__Faj76 {
-	margin-block: 0rem;
+    margin-block: 0rem;
 }
+
 .game-container_content__VkRyQ {
-	padding: 0 0rem;
+    padding: 0 0rem;
 }
 /* SEPERATOR SEPERATOR SEPERATOR SEPERATOR SEPERATOR */
 .open-button {
-	display: flex;
-	position: fixed; top: 0px; left: 0px;
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     font-size: 14px;
     cursor: pointer;
     border: 1px solid #999;
@@ -64,9 +82,11 @@
     z-index: 1001;
     transition: background-color 0.3s;
 }
-.open-button:hover {
-    background-color: #bbb;
-}
+
+    .open-button:hover {
+        background-color: #bbb;
+    }
+
 .toggle-button {
     height: 40px;
     width: 100%;
@@ -78,17 +98,20 @@
     transition: background-color 0.3s;
 }
 
-.toggle-button.on {
-    background-color: #00cc00;
-}
-.toggle-button:hover {
-    background-color: #777; /* Darker shade for hover when not on */
-}
-.toggle-button.on:hover {
-    background-color: #006400; /* Darker shade for hover when on */
-}
+    .toggle-button.on {
+        background-color: #00cc00;
+    }
+
+    .toggle-button:hover {
+        background-color: #777; /* Darker shade for hover when not on */
+    }
+
+    .toggle-button.on:hover {
+        background-color: #006400; /* Darker shade for hover when on */
+    }
+
 .normal-button {
-	height: 40px;
+    height: 40px;
     margin-top: 5px;
     width: 100%;
     font-size: 14px;
@@ -98,6 +121,7 @@
     color: #333;
     transition: background-color 0.3s;
 }
-.normal-button:hover {
-    background-color: #bbb;
-}
+
+    .normal-button:hover {
+        background-color: #bbb;
+    }

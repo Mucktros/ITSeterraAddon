@@ -764,6 +764,21 @@ skibButton.addEventListener("mouseout", () => {
 });
 //Reboot Cards
 function labelOFF() { document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].style.opacity = "0" }
+
+function labelON() { document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].style.opacity = "1" }
+
+function namesOFF() {
+    const elements = document.getElementsByClassName('game-header_withDivider__ZHYAO');
+
+    if (elements.length > 0) {
+        for (let i = 0; i < elements.length; i++) {
+            const el = elements[i];
+            el.style.display = "none";
+            el.style.opacity = "0";
+        }
+    }
+}
+
 function namesON() {
     const elements = document.getElementsByClassName('game-header_withDivider__ZHYAO');
 
@@ -771,30 +786,76 @@ function namesON() {
         for (let i = 0; i < elements.length; i++) {
             const el = elements[i];
             el.style.display = "block";
-            el.style.visibility = "visible";
             el.style.opacity = "1";
         }
     }
 }
 
-function flagsOFF() { 
-	document.getElementsByClassName('corner-image_wrapper__ej_p1')[0].style.opacity = "0"
+function flagsOFF() {
+    const elements = document.getElementsByClassName('game-tooltip_image__pL4HG');
+    if (elements.length > 0) {
+        for (let i = 0; i < elements.length; i++) {
+            const el = elements[i];
+            el.style.display = "none";
+            el.style.opacity = "0";
+        }
+    }
+    const cornerElements = document.getElementsByClassName('corner-image_image__QVJ9c');
+    if (cornerElements.length > 0) {
+        for (let i = 0; i < cornerElements.length; i++) {
+            const el = cornerElements[i];
+            el.style.display = "none";
+            el.style.opacity = "0";
+        }
+    }
+}
+
+function flagsON() {
+    const elements = document.getElementsByClassName('game-tooltip_image__pL4HG');
+    if (elements.length > 0) {
+        for (let i = 0; i < elements.length; i++) {
+            const el = elements[i];
+            el.style.display = "block";
+            el.style.opacity = "1";
+        }
+    }
+    const cornerElements = document.getElementsByClassName('corner-image_image__QVJ9c');
+    if (cornerElements.length > 0) {
+        for (let i = 0; i < cornerElements.length; i++) {
+            const el = cornerElements[i];
+            el.style.display = "block";
+            el.style.opacity = "1";
+        }
+    }
 }
 //Label Reboot card
 const rebootlabelButton = document.createElement("button");
 rebootlabelButton.textContent = "Remove Label";
 rebootlabelButton.classList.add("normal-button");
 rebootlabelButton.addEventListener("click", labelOFF);
+const labelOnButton = document.createElement("button");
+// label on
+labelOnButton.textContent = "Show Label";
+labelOnButton.classList.add("normal-button");
+labelOnButton.addEventListener("click", labelON);
 //Names Reboot card
 const rebootnamesButton = document.createElement("button");
-rebootnamesButton.textContent = "Add Names";
+rebootnamesButton.textContent = "Remove Names";
 rebootnamesButton.classList.add("normal-button");
-rebootnamesButton.addEventListener("click", namesON);
+rebootnamesButton.addEventListener("click", namesOFF);
+const NamesOnButton = document.createElement("button");
+NamesOnButton.textContent = "Show Names";
+NamesOnButton.classList.add("normal-button");
+NamesOnButton.addEventListener("click", namesON);
 //Flags Reboot card
 const rebootflagsButton = document.createElement("button");
 rebootflagsButton.textContent = "Remove Flags";
 rebootflagsButton.classList.add("normal-button");
 rebootflagsButton.addEventListener("click", flagsOFF);
+const FlagsOnButton = document.createElement("button");
+FlagsOnButton.textContent = "Show Flags";
+FlagsOnButton.classList.add("normal-button");
+FlagsOnButton.addEventListener("click", flagsON);
 //Jit Buttons
 //Jit On Button
 const jitonButton = document.createElement("button");
@@ -924,8 +985,11 @@ function lunchlyForm() {
         header3.style = "padding: 5px; text-align: center;";
         column3.appendChild(header3);
         column3.appendChild(rebootlabelButton);
+		column3.appendChild(labelOnButton);
         column3.appendChild(rebootnamesButton);
+		column3.appendChild(NamesOnButton);
         column3.appendChild(rebootflagsButton);
+		column3.appendChild(FlagsOnButton);
         
 		const header4 = document.createElement("div");
         header4.textContent = "Jit settings";
