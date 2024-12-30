@@ -763,40 +763,38 @@ skibButton.addEventListener("mouseout", () => {
 	skibButton.style.backgroundColor = "#ccc";
 });
 //Reboot Cards
-function labelON() { document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].style.opacity = "1" }
+function labelOFF() { document.getElementsByClassName('game-tooltip_tooltip__w_58_')[0].style.opacity = "0" }
 function namesON() {
-	document.getElementsByClassName('game-header_withDivider__ZHYAO')[0].style.display = "block"
-	document.getElementsByClassName('game-header_withDivider__ZHYAO')[1].style.display = "block"
-	document.getElementsByClassName('game-header_withDivider__ZHYAO')[2].style.display = "block"
-	 }
-function flagsON() { 
-	document.getElementsByClassName('corner-image_wrapper__ej_p1')[0].style.display = "block"
+    const elements = document.getElementsByClassName('game-header_withDivider__ZHYAO');
+
+    if (elements.length > 0) {
+        for (let i = 0; i < elements.length; i++) {
+            const el = elements[i];
+            el.style.display = "block";
+            el.style.visibility = "visible";
+            el.style.opacity = "1";
+        }
+    }
 }
-function rebootall() {
-	labelON();
-	namesON();
-	flagsON();
+
+function flagsOFF() { 
+	document.getElementsByClassName('corner-image_wrapper__ej_p1')[0].style.opacity = "0"
 }
 //Label Reboot card
 const rebootlabelButton = document.createElement("button");
-rebootlabelButton.textContent = "Revive Label";
+rebootlabelButton.textContent = "Remove Label";
 rebootlabelButton.classList.add("normal-button");
-rebootlabelButton.addEventListener("click", labelON);
+rebootlabelButton.addEventListener("click", labelOFF);
 //Names Reboot card
 const rebootnamesButton = document.createElement("button");
-rebootnamesButton.textContent = "Revive Names";
+rebootnamesButton.textContent = "Add Names";
 rebootnamesButton.classList.add("normal-button");
 rebootnamesButton.addEventListener("click", namesON);
 //Flags Reboot card
 const rebootflagsButton = document.createElement("button");
-rebootflagsButton.textContent = "Revive Flags";
+rebootflagsButton.textContent = "Remove Flags";
 rebootflagsButton.classList.add("normal-button");
-rebootflagsButton.addEventListener("click", flagsON);
-//Reboot all
-const rebootallButton = document.createElement("button");
-rebootallButton.textContent = "----Reboot all-[.]-";
-rebootallButton.classList.add("normal-button");
-rebootallButton.addEventListener("click", rebootall);
+rebootflagsButton.addEventListener("click", flagsOFF);
 //Jit Buttons
 //Jit On Button
 const jitonButton = document.createElement("button");
@@ -922,13 +920,12 @@ function lunchlyForm() {
 		column2.appendChild(skibButton);
 
 		const header3 = document.createElement("div");
-        header3.textContent = "Reboot cards";
+        header3.textContent = "Cosmetic Changes";
         header3.style = "padding: 5px; text-align: center;";
         column3.appendChild(header3);
         column3.appendChild(rebootlabelButton);
         column3.appendChild(rebootnamesButton);
         column3.appendChild(rebootflagsButton);
-        column3.appendChild(rebootallButton);
         
 		const header4 = document.createElement("div");
         header4.textContent = "Jit settings";
