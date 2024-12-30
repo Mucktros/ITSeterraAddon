@@ -1,0 +1,103 @@
+.map-styles_labelBox__gTsp5 {
+  display: none;
+}
+.map-styles_extendedHitboxHidden__PNW0h {
+  opacity: 0;
+}
+.game-tooltip_tooltip__w_58_ {
+  opacity: 0;
+}
+.game-header_withDivider__ZHYAO {
+  display: none;
+}
+.game-header_skipQuestionButton__ZmN_y {
+  display: none;
+}
+.corner-image_wrapper__ej_p1 {
+  display: none;
+}
+.language-list_root__uHQD6 {
+  border: none;
+  margin-top: 0rem;
+  padding: 0rem;
+}
+.language-list_list__vKyJk {
+  margin-top: 0rem;
+}
+.game-footer_footer__kv0y3 {
+  padding: 0 0rem 0rem;
+}
+.highscore_root__5AF9m {
+  border: none;
+  padding: 0rem 0rem;
+}
+.highscore_table__oKrYg {
+  margin-top: 0rem;
+}
+.highscore_buttonContainer__dO8BP {
+  margin-top: 0rem;
+}
+.game-header_wrapper__JDf24 {
+  background: hsla(0, 0%, 100%, 0);
+}
+.game-footer_settingsButton__qIHi5 {
+	display: none;
+}
+.audio-player_playButton__vwNa2 {
+	display: none;
+}
+.game-page_gameAreaWrapper__Faj76 {
+	margin-block: 0rem;
+}
+.game-container_content__VkRyQ {
+	padding: 0 0rem;
+}
+/* SEPERATOR SEPERATOR SEPERATOR SEPERATOR SEPERATOR */
+.open-button {
+	display: flex;
+	position: fixed; top: 0px; left: 0px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #999;
+    background-color: #ccc;
+    color: #333;
+    z-index: 1001;
+    transition: background-color 0.3s;
+}
+.open-button:hover {
+    background-color: #bbb;
+}
+.toggle-button {
+    height: 40px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #555;
+    color: white;
+    margin-top: 5px;
+    transition: background-color 0.3s;
+}
+
+.toggle-button.on {
+    background-color: #00cc00;
+}
+.toggle-button:hover {
+    background-color: #777; /* Darker shade for hover when not on */
+}
+.toggle-button.on:hover {
+    background-color: #006400; /* Darker shade for hover when on */
+}
+.normal-button {
+	height: 40px;
+    margin-top: 5px;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #999;
+    background-color: #ccc;
+    color: #333;
+    transition: background-color 0.3s;
+}
+.normal-button:hover {
+    background-color: #bbb;
+}

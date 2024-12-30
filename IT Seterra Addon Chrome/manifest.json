@@ -1,22 +1,38 @@
 {
+  "description": "Adds Lunchly to Seterra.",
   "manifest_version": 3,
-  "name": "IT Seterra",
-  "description": "--",
-  "version": "1",
-  "permissions": [
-    "storage"
-  ],
+  "name": "Seterra Lunchly Wizard",
+  "version": "1.0",
   "icons": {
     "512": "icons/seterra.png"
   },
   "content_scripts": [
     {
-      "js": [
-        "ITSeterraChromium.js"
-      ],
       "matches": [
         "https://www.geoguessr.com/*"
+      ],
+      "js": [
+        "lunchlymenu.js"
+      ],
+      "css": [
+        "styles.css"
       ]
     }
-  ]
+  ],
+  "permissions": [
+    "activeTab"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "images/water.gif",
+        "icons/seterra.png"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_icon": "icons/seterra.png",
+    "default_title": "Seterra Lunchly Wizard"
+  }
 }
