@@ -27,15 +27,34 @@ A special thanks to **NekoXIII** for creating the original SeterraAddon, which s
 - **Flags**
 - **Bold Names**
 - **Label Click On Text**
-- **Skib**: Move the map around.
-- **Auto Translations**: Changing languages will also change the extension features, but you can disable this by using the button under the extension features.
-
+- **Nearby Lines**
+- **Show All Lines**
+- **Toggle Indicators**
+- **Toggle Keybinds**
+- **Dim Screen**
 ---
 
 ## Features For Firefox ✨
 
 **CSSeterraAddon** offers the following customization options for **Seterra**:
-**viz release notes**
+- **Space Map Reset**
+- **Map Padding**
+- **Black BG**
+- **Performance**
+- **Mobile Mode**
+- **Disabled Colors**
+- **No Water / No Background**
+- **Skib Out**
+- **Cursor Label**
+- **Names / Top Header**
+- **Flags**
+- **Bold Names**
+- **Label Click On Text**
+- **Nearby Lines**
+- **Show All Lines**
+- **Toggle Indicators**
+- **Toggle Keybinds**
+- **Dim Screen**
 
 ---
 
